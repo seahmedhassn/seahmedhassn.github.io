@@ -153,20 +153,20 @@ const openSourceProjects = [
         category: "AI & Machine Learning Systems",
         id: "ai-systems",
         tools: [
-            { name: "Qwen3-TTS-Studio-Fine-Tunned", stack: "Python, PyTorch, HuggingFace", focus: "Low-latency neural voice synthesis for dynamic simulation NPCs.", url: "https://github.com/ahmedahmed20008669/Qwen3-TTS-Studio-Fine-Tunned" },
-            { name: "AI_HandGestures", stack: "Python, MediaPipe, OpenCV", focus: "Touchless spatial gesture classification for simulation NUI.", url: "https://github.com/ahmedahmed20008669/AI_HandGestures" },
-            { name: "BlackWhite_Colorizer_Model", stack: "C#, .NET, ONNX Runtime", focus: "Local deep learning neural model inference in C# desktop app.", url: "https://github.com/ahmedahmed20008669/BlackWhite_Colorizer_Model_C_SharpApplication" },
-            { name: "Vesper-AI & maintenance-app", stack: "Fullstack, REST APIs, SQL", focus: "Fullstack web architecture, database persistence, and CRUD services.", url: "https://github.com/ahmedahmed20008669/Vesper-AI-Your-Intelligent-Web-APP-Companion" },
-            { name: "MainZombiesAI_Project", stack: "UE / Unity, Behavior Trees", focus: "Cross-platform multi-agent pathfinding and perception trees.", url: "https://github.com/ahmedahmed20008669/MainZombiesAI_Project_Decktop_Mobile" }
+            { name: "Qwen3-TTS-Studio-Fine-Tunned", stack: "Python, PyTorch, HuggingFace", focus: "Low-latency neural voice synthesis for dynamic simulation NPCs.", url: "https://github.com/seahmedhassn/Qwen3-TTS-Studio-Fine-Tunned" },
+            { name: "AI_HandGestures", stack: "Python, MediaPipe, OpenCV", focus: "Touchless spatial gesture classification for simulation NUI.", url: "https://github.com/seahmedhassn/AI_HandGestures" },
+            { name: "BlackWhite_Colorizer_Model", stack: "C#, .NET, ONNX Runtime", focus: "Local deep learning neural model inference in C# desktop app.", url: "https://github.com/seahmedhassn/BlackWhite_Colorizer_Model_C_SharpApplication" },
+            { name: "Vesper-AI & maintenance-app", stack: "Fullstack, REST APIs, SQL", focus: "Fullstack web architecture, database persistence, and CRUD services.", url: "https://github.com/seahmedhassn/Vesper-AI-Your-Intelligent-Web-APP-Companion" },
+            { name: "MainZombiesAI_Project", stack: "UE / Unity, Behavior Trees", focus: "Cross-platform multi-agent pathfinding and perception trees.", url: "https://github.com/seahmedhassn/MainZombiesAI_Project_Decktop_Mobile" }
         ]
     },
     {
         category: "Graphics, XR & Fullstack Systems",
         id: "other-systems",
         tools: [
-            { name: "PhotoModeFX", stack: "UE / Unity, HLSL Shaders", focus: "Modular post-processing, LUT color grading, and viewport export.", url: "https://github.com/ahmedahmed20008669/PhotoModeFX" },
-            { name: "Animals-AR-unity", stack: "Unity, AR Foundation, C#", focus: "Plane detection, environmental lighting estimation, and touch NUI.", url: "https://github.com/ahmedahmed20008669/Animals-AR-unity" },
-            { name: "Local-File-Share", stack: "C#, Python, TCP/UDP Sockets", focus: "Peer-to-peer asynchronous socket stream and file discovery engine.", url: "https://github.com/ahmedahmed20008669/Local-File-Share" }
+            { name: "PhotoModeFX", stack: "UE / Unity, HLSL Shaders", focus: "Modular post-processing, LUT color grading, and viewport export.", url: "https://github.com/seahmedhassn/PhotoModeFX" },
+            { name: "Animals-AR-unity", stack: "Unity, AR Foundation, C#", focus: "Plane detection, environmental lighting estimation, and touch NUI.", url: "https://github.com/seahmedhassn/Animals-AR-unity" },
+            { name: "Local-File-Share", stack: "C#, Python, TCP/UDP Sockets", focus: "Peer-to-peer asynchronous socket stream and file discovery engine.", url: "https://github.com/seahmedhassn/Local-File-Share" }
         ]
     }
 ];
