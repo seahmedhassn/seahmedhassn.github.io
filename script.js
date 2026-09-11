@@ -78,7 +78,8 @@ const portfolioData = [
                 tech: "Unreal Engine, Mobile (Android/iOS), C++, AWS Dedicated Servers, Sockets",
                 challenge: "Cross-Mobile Multiplayer Architecture: Engineered real-time multiplayer combat between mobile devices on Unreal Engine with AWS dedicated server synchronization (~120ms live ping), client prediction, and lag compensation.",
                 solution: "Mobile 3D Lobby & Character Selection: Built interactive character roster (Casanova, Stephanie, Edward, Rayan, Max), mobile touch UI controls, weapon loadouts, and matchmaking.",
-                matrix: "Optimized mobile GPU rendering, frame pacing, touch latency, and server bandwidth for mobile devices.",
+                optimization: "Mobile Gaming & Performance Optimization: Strictly capped draw calls (<120 per frame) via mobile mesh batching, Hierarchical Instanced Static Meshes (HISM), and aggressive LOD clustering. Implemented mobile Forward Shading, ASTC texture compression with runtime Mipmap streaming (keeping runtime RAM under 350MB for low-spec 2GB/3GB Android devices), Dynamic Resolution Scaling (DRS) to eliminate thermal throttling and battery drain, and custom UDP packet delta-compression resilient to erratic mobile LTE/Wi-Fi transitions.",
+                matrix: "Optimized mobile GPU rendering (Mali, Adreno, PowerVR), frame pacing locked at 60 FPS, touch latency tuning, and server bandwidth optimization.",
                 imageUrls: [
                     "Images/WiningWorieros_1.png",
                     "Images/WiningWorieros_2.png",
@@ -104,6 +105,7 @@ const portfolioData = [
                 tech: "Unity, Vuforia / AR Foundation, C#, Trilingual Phonetics",
                 challenge: "Planar Target Detection & Tracking: Built multi-card planar image tracking for physical flashcard decks with dynamic occlusion handling.",
                 solution: "Trilingual Educational AR Interaction: Animated 3D animal models with realistic skeletal animations, authentic creature sounds, and interactive speech phonetics in 3 languages (English, Arabic, French).",
+                optimization: "Mobile Engine & Thermal Optimization: Multi-threaded Vuforia computer vision processing onto background worker threads, freeing the main render thread to sustain locked 60 FPS. Eliminated C# runtime heap allocations in update loops (Zero-GC) to prevent frame stutters, stripped unused shader variants to reduce APK download size by 45%, and implemented battery-friendly screen throttling during idle AR states.",
                 matrix: "Stable 60 FPS mobile shader optimization and touch responsiveness across target Android and iOS devices.",
                 imageUrls: [
                     "Images/ticoners/jungle_screen_1.png",
@@ -124,6 +126,7 @@ const portfolioData = [
                 tech: "Unity, AR Foundation, C#, 3D Phonics",
                 challenge: "Interactive Early-Childhood Phonics: Designed an intuitive AR flashcard system educating children in Arabic, English, and French alphabets.",
                 solution: "Interactive 3D Letter Modeling: Each card triggers a corresponding 3D animated object, trilingual audio pronunciation, and interactive touch responses.",
+                optimization: "Mobile Asset & Memory Footprint Optimization: Implemented lightweight mobile unlit and vertex-lit shaders, compressed audio assets with Vorbis streaming, and designed a lightweight object-pooling architecture for instantaneous card recognition and 3D letter swapping without Garbage Collection hitches.",
                 matrix: "Memory-optimized asset loading and texture compression for rapid card swapping in educational environments.",
                 imageUrls: [
                     "Images/ticoners/alphabet_screen_1.png",
@@ -144,6 +147,7 @@ const portfolioData = [
                 tech: "Unity, AR Tracking, Shader FX, 3D Orbital Dynamics",
                 challenge: "Spatial Astronomy Simulation: Simulated solar system celestial bodies at mobile AR scale with accurate planetary textures and lighting estimation.",
                 solution: "Interactive Orbital Exploration: Children point mobile cameras at cards to explore 3D planets, observe orbital paths, and learn astronomy facts in real time.",
+                optimization: "Mobile Space Shader & Performance Tuning: Authored custom single-pass mobile shaders combining planetary atmosphere rim-lighting with unlit procedural textures, avoiding costly multi-pass calculations and maintaining smooth 60 FPS on low-to-mid range mobile GPUs.",
                 matrix: "Custom mobile unlit/PBR hybrid shaders to maintain high framerate during complex multi-body space rendering.",
                 imageUrls: [
                     "Images/ticoners/space_screen_1.png",
@@ -232,8 +236,8 @@ function renderPortfolio() {
         <h2 class="section-title">Executive Profile</h2>
         <div class="project-card" style="padding: 30px;">
             <p style="font-size: 1.1rem; line-height: 1.8; color: var(--text-main);">
-                Senior Software Engineer and XR Developer with over <strong>6 years of professional experience</strong> delivering enterprise-grade simulations, real-time 3D applications, computer vision tools, and multiplayer systems across <strong>Unreal Engine (C++, Blueprints), Unity (C#), and Python</strong>.<br><br>
-                Specialized in high-fidelity VR flight/rescue simulators with realistic aerodynamic physics, hardware-in-the-loop synchronization, and low-latency rendering. Experienced across cloud-based <strong>Pixel Streaming</strong> architectures, virtual production workflows (<strong>Aximmetry, VIVE Mars</strong>), dedicated server replication (AWS), and custom C++ engine plugin development.<br><br>
+                Senior Software Engineer and XR Developer with over <strong>6 years of professional experience</strong> delivering enterprise-grade simulations, real-time 3D applications, computer vision tools, and cross-platform multiplayer systems across <strong>Unreal Engine (C++, Blueprints), Unity (C#), and Python</strong>.<br><br>
+                Specialized in high-fidelity VR flight/rescue simulators with realistic aerodynamic physics, hardware-in-the-loop synchronization, and low-latency rendering. Deep expertise in <strong>Mobile Game & Engine Optimization</strong> (profiling draw calls, ASTC texture streaming, Dynamic Resolution Scaling, thermal/battery budgeting, and low-latency netcode for mobile devices). Experienced across cloud-based <strong>Pixel Streaming</strong> architectures, virtual production workflows (<strong>Aximmetry, VIVE Mars</strong>), dedicated server replication (AWS), and custom C++ engine plugin development.<br><br>
                 Actively engineering multimodal AI tools, including fine-tuned Text-to-Speech (TTS) pipelines, gesture-based spatial interactions, and edge machine learning systems.
             </p>
         </div>
@@ -281,7 +285,8 @@ function renderPortfolio() {
             <h3 style="color: var(--accent); margin-bottom: 5px; font-size: 1.4rem;">Ticnors <span style="color: var(--text-muted); font-size: 1.1rem; font-weight: 400;">— Unreal Engine &amp; Unity Developing Team Leader</span></h3>
             <p style="color: var(--text-muted); margin-bottom: 15px; font-style: italic;">Feb 2020 – May 2021 | Cairo, Egypt (On-site)</p>
             <ul style="color: var(--text-main); line-height: 1.7; margin-left: 20px;">
-                <li>Supervised a technical engineering team developing multiplayer VR games, interactive virtual expos, and commercial mobile AR applications.</li>
+                <li>Supervised a technical engineering team developing cross-platform multiplayer mobile games and commercial mobile AR applications.</li>
+                <li><strong>Mobile Performance & Engine Optimization:</strong> Led mobile optimization pipelines across Unreal Engine & Unity: strictly managed draw-call budgets (<120), streamlined ASTC texture streaming, profile-guided optimization for mid/low-tier mobile GPUs (Mali, Adreno, PowerVR), and maintained 60 FPS stability without thermal throttling.</li>
                 <li>Built server-client and dedicated multiplayer architectures using AWS cloud backend services for matchmaking and state synchronization.</li>
                 <li>Integrated custom C# scripts in Unity, C++/Blueprints in Unreal Engine, and optimized 3D assets in Blender.</li>
                 <li>Published commercial games and AR suites: <a href="https://apkpure.com/developer/Ticoners%20for%20information%20technology" target="_blank" style="color: var(--accent); font-weight: 600;">View Published Games on APKPure ↗</a></li>
@@ -320,6 +325,13 @@ function renderPortfolio() {
                 </div>
             ` : `<h3>${proj.title}</h3>`;
 
+            const optHtml = proj.optimization ? `
+                <div class="detail-section">
+                    <h4 style="color: var(--accent);">⚡ Mobile Gaming & Performance Optimization</h4>
+                    <p>${proj.optimization}</p>
+                </div>
+            ` : '';
+
             details.innerHTML = `
                 ${headerHtml}
                 <div class="tech-stack">${proj.tech}</div>
@@ -331,6 +343,7 @@ function renderPortfolio() {
                     <h4>Architectural Solution</h4>
                     <p>${proj.solution}</p>
                 </div>
+                ${optHtml}
                 <div class="detail-section">
                     <h4>Technology Matrix</h4>
                     <p>${proj.matrix}</p>
