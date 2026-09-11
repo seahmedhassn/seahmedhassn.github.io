@@ -75,14 +75,26 @@ const portfolioData = [
         sectionTitle: "Techno Vision — Infrastructure Digital Twins & Real Estate Metaverse",
         projects: [
             {
+                title: "Mobile Interactive Real Estate Digital Twins & Touch Apps (Techno Vision)",
+                tech: "Unreal Engine, Mobile (iOS / Android / Tablets), Touch NUI, ASTC Compression, C++",
+                challenge: "Standalone Mobile 3D Masterplan Navigation: Engineered standalone mobile architectural walkthrough applications for real estate sales teams and buyers to interactively tour entire compounds and masterplans on tablets and smartphones with zero cloud latency.",
+                solution: "Mobile Touch NUI & Dynamic Real-time Customization: Programmed custom mobile gesture controls (pinch-to-zoom, dual-finger orbital camera rotation, interactive floorplan minimaps, and point-of-interest touch hotspots), paired with real-time material/finishes customizers and interactive unit selectors.",
+                optimization: "Mobile Hardware Optimization: Applied rigorous mobile engine performance tuning: converted massive CAD/BIM assets into low-draw-call mobile meshes (<100 draw calls per frame), baked high-resolution mobile lightmaps, compressed textures to ASTC format with dynamic Mipmap streaming, and clamped peak runtime memory under 400MB RAM to ensure locked 60 FPS on iOS and Android devices.",
+                matrix: "Standalone mobile APK/IPA deployment, custom touch gesture recognition, memory footprint capped under 400MB RAM, and locked 60 FPS mobile framerate.",
+                mediaLinks: [
+                    { type: "youtube", label: "Mobile Real Estate Digital Reality Tour", url: "https://www.youtube.com/watch?v=9mSJo6saKeA" },
+                    { type: "youtube", label: "New Capital Interactive Mobile Masterplan Twin", url: "https://www.youtube.com/watch?v=H7_xWeUp3k0" },
+                    { type: "youtube", label: "Mobile Interactive Features & Options Demo", url: "https://www.youtube.com/watch?v=D_-rmRa1JRc" }
+                ]
+            },
+            {
                 title: "LRT (Light Rail Transit) Network & Urban Infrastructure Digital Twin (Techno Vision)",
                 tech: "Unreal Engine, GIS Urban Infrastructure, Rail Simulation, Level Streaming, Custom Shaders",
                 challenge: "Large-Scale Transport Network Simulation: Modeled the regional Light Rail Transit (LRT) network and New Administrative Capital infrastructure, requiring simultaneous macro-scale urban spatial navigation and precise mechanical train simulation.",
                 solution: "Interactive Rail Kinematics & Urban Streaming: Built realistic train car physics, automated station approach sequences, switch gear kinematics, dynamic passenger flow, and high-performance LOD/streaming hierarchies maintaining high framerates across complex urban geometry.",
                 matrix: "GIS spatial accuracy, real-time railway kinematics, dynamic passenger flow, and large-scale open-world level streaming.",
                 mediaLinks: [
-                    { type: "youtube", label: "LRT Digital Twin Transit Simulation", url: "https://www.youtube.com/watch?v=zw-K6CQe-Cg" },
-                    { type: "youtube", label: "New Capital Infrastructure Digital Twin", url: "https://www.youtube.com/watch?v=H7_xWeUp3k0" }
+                    { type: "youtube", label: "LRT Digital Twin Transit Simulation", url: "https://www.youtube.com/watch?v=zw-K6CQe-Cg" }
                 ]
             },
             {
@@ -94,9 +106,7 @@ const portfolioData = [
                 mediaLinks: [
                     { type: "youtube", label: "Lake-West Compound Sheikh Zayed Cinematic Tour", url: "https://www.youtube.com/watch?v=NoNnJi4eGPY" },
                     { type: "youtube", label: "Techno Vision Digital Twins Showcase Tour", url: "https://www.youtube.com/watch?v=FrR3FsioJYw" },
-                    { type: "youtube", label: "Master Architectural Visualization & Interaction", url: "https://www.youtube.com/watch?v=qZTstP0c9og" },
-                    { type: "youtube", label: "Digital Twins Metaverse Reality Demonstration", url: "https://www.youtube.com/watch?v=D_-rmRa1JRc" },
-                    { type: "youtube", label: "Real Estate Digital Reality Feature Walkthrough", url: "https://www.youtube.com/watch?v=9mSJo6saKeA" }
+                    { type: "youtube", label: "Master Architectural Visualization & Interaction", url: "https://www.youtube.com/watch?v=qZTstP0c9og" }
                 ]
             }
         ]
@@ -310,6 +320,7 @@ function renderPortfolio() {
             <p style="color: var(--text-muted); margin-bottom: 15px; font-style: italic;">Apr 2021 – Mar 2023 | Giza, Egypt (Hybrid)</p>
             <ul style="color: var(--text-main); line-height: 1.7; margin-left: 20px;">
                 <li>Engineered large-scale urban infrastructure digital twins, including the regional <strong>Light Rail Transit (LRT)</strong> network and <strong>New Administrative Capital</strong> transit projects.</li>
+                <li><strong>Mobile 3D Platform Architecture:</strong> Engineered standalone interactive mobile 3D digital twins and real estate apps for iOS, Android, and tablets, featuring customized touch gestures, floorplan navigators, ASTC texture streaming, and low memory footprints (&lt;400MB RAM) for 60 FPS performance.</li>
                 <li>Developed cinematic architectural digital twins and real estate metaverse walkthroughs (including <strong>Lake-West Compound, Sheikh Zayed</strong>), integrating dynamic time-of-day lighting, material configurators, and MetaHuman guides.</li>
                 <li>Configured Pixel Streaming and WebRTC servers allowing corporate clients to inspect complex 3D masterplans directly inside low-spec web browsers.</li>
             </ul>
