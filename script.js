@@ -46,26 +46,58 @@ const portfolioData = [
         ]
     },
     {
-        sectionId: "digital-twins",
-        sectionTitle: "Digital Twins & Cloud Rendering",
+        sectionId: "creative-motion",
+        sectionTitle: "Creative Motion — Enterprise Pixel Streaming & RTA Dubai",
         projects: [
             {
-                title: "RTA Dubai Virtual Museum & Interactive Digital Twin",
-                tech: "UE, Pixel Streaming, WebRTC, GIS",
-                challenge: "GIS Navigation: Built macro-to-micro camera fast-travel covering major Dubai transit infrastructure.",
-                solution: "3D Inspection Engine: Multi-axis orbital asset inspector with dynamic directional lighting adjustment for fleet models (Dubai Bus, eVTOL air taxis, Infinity Bridge).",
-                matrix: "Bilingual RTL/LTR UI: Real-time Arabic and English localization across interactive 2D/3D floorplans, data cards, and video walls.",
+                title: "RTA Dubai Virtual Museum & Interactive Digital Twin (Creative Motion)",
+                tech: "Unreal Engine, Cloud Pixel Streaming, WebRTC, GIS, Bilingual Localization",
+                challenge: "High-Density Urban GIS Navigation: Engineered macro-to-micro camera fast-travel spanning major Dubai public transit infrastructure (Rashidiya Depot, Dubai Metro, Dubai Bus fleet, eVTOL air taxis, and Infinity Bridge) with zero client-side installation requirements.",
+                solution: "Multi-Axis Interactive Inspection Engine: Built orbital asset inspection with dynamic real-time sun positioning, directional lighting controls, and bilingual (Arabic RTL / English LTR) localized UI across interactive 2D/3D floorplans, telemetric data cards, and interactive video walls.",
+                optimization: "Enterprise Cloud Streaming Deployment: Streamed photorealistic 3D visuals directly to low-spec web browsers via custom WebRTC signalling, allowing municipal stakeholders to inspect transport infrastructure in real time without local workstation hardware.",
+                matrix: "Bilingual localization engine, dynamic asset streaming, sub-second level streaming transitions, and zero-install client deployment.",
                 mediaLinks: [
-                    { type: "youtube", label: "Macro-to-Micro Camera Fast-Travel (Rashidiya Depot)", url: "https://www.youtube.com/watch?v=BfXqCMl6VGw" },
-                    { type: "youtube", label: "Multi-axis Orbital Asset Inspection Engine", url: "https://www.youtube.com/watch?v=WrGm5SZ8QtI" }
+                    { type: "youtube", label: "Macro-to-Micro Fast-Travel (Rashidiya Depot)", url: "https://www.youtube.com/watch?v=BfXqCMl6VGw" },
+                    { type: "youtube", label: "Multi-Axis Orbital Asset Inspection Engine", url: "https://www.youtube.com/watch?v=WrGm5SZ8QtI" }
                 ]
             },
             {
-                title: "Enterprise Pixel Streaming & Virtual Production Pipeline (Creative Motion)",
-                tech: "Pixel Streaming, Aximmetry, VIVE Mars",
-                challenge: "Cloud Streaming & Tracking:",
-                solution: "Distributed GPU-rendered 3D applications via WebRTC to web browsers.",
-                matrix: "Cut studio production turnaround by 25% integrating Aximmetry and VIVE Mars camera tracking."
+                title: "Enterprise Cloud Pixel Streaming Architecture & Virtual Production (Creative Motion)",
+                tech: "Pixel Streaming, WebRTC, Coturn STUN/TURN, AWS EC2 (G4dn/G5), NVENC H.264, Docker, Aximmetry, VIVE Mars",
+                challenge: "The Pixel Streaming Engineering Challenge: Delivering photorealistic, uncompressed 3D Unreal Engine applications to browsers worldwide while overcoming core bottlenecks: strict enterprise corporate firewalls and symmetric NATs blocking direct peer connections, client network jitter, high cloud GPU cost scaling per concurrent user (CCU), and input latency.",
+                solution: "Architecting the End-to-End Pixel Streaming Infrastructure:\n- Custom Signalling & Matchmaking: Engineered a scalable Node.js WebSocket matchmaking and signalling cluster negotiating SDP handshakes and dynamically assigning users to dedicated GPU instances.\n- Firewall Traversal via Coturn: Deployed distributed, multi-region Coturn STUN/TURN relays to guarantee 100% WebRTC connection traversal through restrictive corporate VPNs and enterprise firewalls.\n- Cloud GPU Orchestration & Auto-Scaling: Automated Dockerized headless Unreal Engine container instances on AWS EC2 (G4dn/G5 with NVIDIA T4/A10G GPUs). Configured auto-scaling pools that spin up instances upon user demand and immediately terminate idle instances, minimizing cloud compute costs.\n- Bidirectional WebRTC DataChannels: Implemented zero-lag client touch manipulation, camera orbits, UI event passing, and custom HTML/JS overlay data interchange without taxing GPU render threads.\n- Hardware Encoder Tuning: Tuned NVENC H.264 CBR/VBR parameters inside Unreal Engine (bitrate target clamping 8-15 Mbps, adaptive QP compensation) to maintain sub-50ms glass-to-glass latency.",
+                matrix: "Sub-50ms glass-to-glass streaming latency, 100% enterprise firewall traversal via custom TURN, auto-scaling AWS GPU fleet management, and Aximmetry virtual studio integration cutting production turnaround by 25%."
+            }
+        ]
+    },
+    {
+        sectionId: "techno-vision",
+        sectionTitle: "Techno Vision — Infrastructure Digital Twins & Real Estate Metaverse",
+        projects: [
+            {
+                title: "LRT (Light Rail Transit) Network & Urban Infrastructure Digital Twin (Techno Vision)",
+                tech: "Unreal Engine, GIS Urban Infrastructure, Rail Simulation, Level Streaming, Custom Shaders",
+                challenge: "Large-Scale Transport Network Simulation: Modeled the regional Light Rail Transit (LRT) network and New Administrative Capital infrastructure, requiring simultaneous macro-scale urban spatial navigation and precise mechanical train simulation.",
+                solution: "Interactive Rail Kinematics & Urban Streaming: Built realistic train car physics, automated station approach sequences, switch gear kinematics, dynamic passenger flow, and high-performance LOD/streaming hierarchies maintaining high framerates across complex urban geometry.",
+                matrix: "GIS spatial accuracy, real-time railway kinematics, dynamic passenger flow, and large-scale open-world level streaming.",
+                mediaLinks: [
+                    { type: "youtube", label: "LRT Digital Twin Transit Simulation", url: "https://www.youtube.com/watch?v=zw-K6CQe-Cg" },
+                    { type: "youtube", label: "New Capital Infrastructure Digital Twin", url: "https://www.youtube.com/watch?v=H7_xWeUp3k0" }
+                ]
+            },
+            {
+                title: "Photorealistic Architectural Digital Twins & Interactive Metaverse Tours (Techno Vision)",
+                tech: "Unreal Engine 5, Lumen / Ray Tracing, MetaHuman Creator, Real-time Configurator, PBR Shaders",
+                challenge: "Enterprise Real Estate Metaverse Twins: Developing interactive real-time digital twins for premier real estate developers (such as the Lake-West Compound in Sheikh Zayed) with cinematic architectural visualization and real-time configurability.",
+                solution: "Interactive Architectural Reality Engine: Engineered real-time architectural walkthroughs featuring dynamic time-of-day sun/shadow simulation, dynamic interior material/finishes switching, orbital masterplan camera navigation, architectural floorplan fast-travel, and MetaHuman interactive virtual guides.",
+                matrix: "Lumen real-time global illumination, dynamic material instancing, MetaHuman virtual guides, and photorealistic PBR rendering.",
+                mediaLinks: [
+                    { type: "youtube", label: "Lake-West Compound Sheikh Zayed Cinematic Tour", url: "https://www.youtube.com/watch?v=NoNnJi4eGPY" },
+                    { type: "youtube", label: "Techno Vision Digital Twins Showcase Tour", url: "https://www.youtube.com/watch?v=FrR3FsioJYw" },
+                    { type: "youtube", label: "Master Architectural Visualization & Interaction", url: "https://www.youtube.com/watch?v=qZTstP0c9og" },
+                    { type: "youtube", label: "Digital Twins Metaverse Reality Demonstration", url: "https://www.youtube.com/watch?v=D_-rmRa1JRc" },
+                    { type: "youtube", label: "Real Estate Digital Reality Feature Walkthrough", url: "https://www.youtube.com/watch?v=9mSJo6saKeA" }
+                ]
             }
         ]
     },
@@ -263,12 +295,13 @@ function renderPortfolio() {
         </div>
         
         <div class="project-card" style="padding: 30px;">
-            <h3 style="color: var(--accent); margin-bottom: 5px; font-size: 1.4rem;">Creative Motion <span style="color: var(--text-muted); font-size: 1.1rem; font-weight: 400;">— Unreal Engine Developer</span></h3>
-            <p style="color: var(--text-muted); margin-bottom: 15px; font-style: italic;">Mar 2023 – Apr 2024 | Cairo, Egypt / UAE (Remote & On-site)</p>
+            <h3 style="color: var(--accent); margin-bottom: 5px; font-size: 1.4rem;">Creative Motion <span style="color: var(--text-muted); font-size: 1.1rem; font-weight: 400;">— Senior Unreal Engine Developer &amp; Streaming Specialist</span></h3>
+            <p style="color: var(--text-muted); margin-bottom: 15px; font-style: italic;">Mar 2023 – Apr 2024 | Cairo, Egypt / UAE (Remote &amp; On-site)</p>
             <ul style="color: var(--text-main); line-height: 1.7; margin-left: 20px;">
-                <li>Engineered interactive high-fidelity 3D architectural visualization software deployed globally via <strong>Unreal Pixel Streaming</strong>.</li>
-                <li>Reduced virtual production turnaround time by <strong>25%</strong> by integrating and calibrating Aximmetry and VIVE Mars camera tracking systems.</li>
-                <li>Programmed modular Unreal Engine C++ plugins to automate lighting setups, asset pipelines, and cinematic scene composition.</li>
+                <li>Delivered the <strong>RTA Dubai Virtual Museum &amp; Digital Twin</strong>: engineered macro-to-micro GIS camera traversal across Dubai transit networks, interactive fleet asset inspection (Dubai Bus, eVTOL air taxis, Infinity Bridge), and full bilingual (Arabic/English) localized UI.</li>
+                <li><strong>Enterprise Cloud Pixel Streaming Architecture:</strong> Overcame enterprise firewall/symmetric NAT obstacles by engineering a custom Node.js WebSocket signalling cluster paired with distributed Coturn STUN/TURN relays, enabling 100% traversal on restricted corporate VPNs.</li>
+                <li>Orchestrated auto-scaling headless Unreal Engine container instances on AWS EC2 (G4dn/G5 GPUs) with NVENC H.264 bitrate clamping and bidirectional DataChannels, achieving sub-50ms glass-to-glass latency in web browsers.</li>
+                <li>Reduced virtual production turnaround time by <strong>25%</strong> through Aximmetry virtual studio and VIVE Mars camera tracking integration.</li>
             </ul>
         </div>
         
@@ -276,8 +309,9 @@ function renderPortfolio() {
             <h3 style="color: var(--accent); margin-bottom: 5px; font-size: 1.4rem;">Techno &lt;Vision&gt; <span style="color: var(--text-muted); font-size: 1.1rem; font-weight: 400;">— Senior Unreal Engine Developer</span></h3>
             <p style="color: var(--text-muted); margin-bottom: 15px; font-style: italic;">Apr 2021 – Mar 2023 | Giza, Egypt (Hybrid)</p>
             <ul style="color: var(--text-main); line-height: 1.7; margin-left: 20px;">
-                <li>Led development of interactive VR simulations and digital twins for rescue training and enterprise architectural marketing.</li>
-                <li>Configured Pixel Streaming server infrastructure, allowing clients to stream high-fidelity 3D applications to low-spec browsers.</li>
+                <li>Engineered large-scale urban infrastructure digital twins, including the regional <strong>Light Rail Transit (LRT)</strong> network and <strong>New Administrative Capital</strong> transit projects.</li>
+                <li>Developed cinematic architectural digital twins and real estate metaverse walkthroughs (including <strong>Lake-West Compound, Sheikh Zayed</strong>), integrating dynamic time-of-day lighting, material configurators, and MetaHuman guides.</li>
+                <li>Configured Pixel Streaming and WebRTC servers allowing corporate clients to inspect complex 3D masterplans directly inside low-spec web browsers.</li>
             </ul>
         </div>
         
@@ -286,10 +320,10 @@ function renderPortfolio() {
             <p style="color: var(--text-muted); margin-bottom: 15px; font-style: italic;">Feb 2020 – May 2021 | Cairo, Egypt (On-site)</p>
             <ul style="color: var(--text-main); line-height: 1.7; margin-left: 20px;">
                 <li>Supervised a technical engineering team developing cross-platform multiplayer mobile games and commercial mobile AR applications.</li>
-                <li><strong>Mobile Performance & Engine Optimization:</strong> Led mobile optimization pipelines across Unreal Engine & Unity: strictly managed draw-call budgets (<120), streamlined ASTC texture streaming, profile-guided optimization for mid/low-tier mobile GPUs (Mali, Adreno, PowerVR), and maintained 60 FPS stability without thermal throttling.</li>
+                <li><strong>Mobile Performance &amp; Engine Optimization:</strong> Led mobile optimization pipelines across Unreal Engine &amp; Unity: strictly managed draw-call budgets (&lt;120), streamlined ASTC texture streaming, profile-guided optimization for mid/low-tier mobile GPUs (Mali, Adreno, PowerVR), and maintained 60 FPS stability without thermal throttling.</li>
                 <li>Built server-client and dedicated multiplayer architectures using AWS cloud backend services for matchmaking and state synchronization.</li>
                 <li>Integrated custom C# scripts in Unity, C++/Blueprints in Unreal Engine, and optimized 3D assets in Blender.</li>
-                <li>Published commercial games and AR suites: <a href="https://apkpure.com/developer/Ticoners%20for%20information%20technology" target="_blank" style="color: var(--accent); font-weight: 600;">View Published Games on APKPure ↗</a></li>
+                <li>Published commercial games and AR suites: <a href="https://apkpure.com/developer/Ticoners%20for%20information%20technology" target="_blank" style="color: var(--accent); font-weight: 600;">View Published Games on APKPure &#8599;</a></li>
             </ul>
         </div>
     `;
@@ -327,7 +361,7 @@ function renderPortfolio() {
 
             const optHtml = proj.optimization ? `
                 <div class="detail-section">
-                    <h4 style="color: var(--accent);">⚡ Mobile Gaming & Performance Optimization</h4>
+                    <h4 style="color: var(--accent);">Mobile Gaming &amp; Performance Optimization</h4>
                     <p>${proj.optimization}</p>
                 </div>
             ` : '';
@@ -368,7 +402,7 @@ function renderPortfolio() {
                             <div class="media-item youtube-thumbnail" style="position:relative;">
                                 <a href="${link.url}" target="_blank" style="display:block; text-decoration:none;">
                                     <div style="padding:10px; background:var(--bg-color); color:var(--text-main); font-weight:600; border-top-left-radius:8px; border-top-right-radius:8px; border:1px solid var(--border-color); border-bottom:none;">
-                                        🎬 ${link.label}
+                                        ${link.label}
                                     </div>
                                     <div style="position:relative;">
                                         <img src="https://img.youtube.com/vi/${videoId}/hqdefault.jpg" alt="${link.label}" style="width:100%; border-bottom-left-radius:8px; border-bottom-right-radius:8px; display:block; border:1px solid var(--border-color);" />
@@ -385,17 +419,16 @@ function renderPortfolio() {
                         linksHtml += `
                             <div class="media-item" style="position:relative; margin-bottom: 10px;">
                                 <div style="padding:10px; background:var(--bg-color); color:var(--text-main); font-weight:600; border-top-left-radius:8px; border-top-right-radius:8px; border:1px solid var(--border-color); border-bottom:none;">
-                                    📁 ${link.label}
+                                    ${link.label}
                                 </div>
                                 <iframe src="${embedUrl}" width="100%" height="320" style="border:1px solid var(--border-color); border-bottom-left-radius:8px; border-bottom-right-radius:8px;" allow="autoplay"></iframe>
                             </div>
                         `;
                     } else {
                         // APKPure, Facebook, Drive, etc.
-                        const icon = link.type === 'apkpure' ? '🎮' : '🔗';
                         linksHtml += `
                             <a href="${link.url}" target="_blank" class="external-link-btn" style="display:block; padding:15px; background:var(--bg-color); color:var(--accent); text-decoration:none; border-radius:8px; border:1px solid var(--border-color); text-align:center; font-weight:600; transition:background 0.2s;">
-                                ${icon} ${link.label} ↗
+                                ${link.label} &#8599;
                             </a>
                         `;
                     }
