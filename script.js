@@ -74,11 +74,11 @@ const portfolioData = [
         sectionTitle: "Networked Multiplayer Systems",
         projects: [
             {
-                title: "The Winning Warriors: Networked Multiplayer Action Game (Ticnors)",
-                tech: "UE, AWS Backend, C++, Sockets",
-                challenge: "AWS Dedicated Multiplayer: Architected server-client state replication on AWS (~120ms live ping) with client prediction and lag compensation.",
-                solution: "Lobby & Character Roster: Built interactive 3D lobby framework with character selection (Casanova, Stephanie, Edward, Rayan, Max) and weapon loadouts.",
-                matrix: "Optimized server bandwidth and client latency.",
+                title: "The Winning Warriors: Mobile Multiplayer Action Game (Unreal Engine)",
+                tech: "Unreal Engine, Mobile (Android/iOS), C++, AWS Dedicated Servers, Sockets",
+                challenge: "Cross-Mobile Multiplayer Architecture: Engineered real-time multiplayer combat between mobile devices on Unreal Engine with AWS dedicated server synchronization (~120ms live ping), client prediction, and lag compensation.",
+                solution: "Mobile 3D Lobby & Character Selection: Built interactive character roster (Casanova, Stephanie, Edward, Rayan, Max), mobile touch UI controls, weapon loadouts, and matchmaking.",
+                matrix: "Optimized mobile GPU rendering, frame pacing, touch latency, and server bandwidth for mobile devices.",
                 imageUrls: [
                     "Images/WiningWorieros_1.png",
                     "Images/WiningWorieros_2.png",
@@ -99,30 +99,69 @@ const portfolioData = [
         sectionTitle: "Commercial Mobile AR",
         projects: [
             {
-                title: "Ticoners Commercial AR Product Suite",
-                tech: "Unity, Vuforia, AR Foundation, C#",
-                challenge: "Vision Tracking & Trilingual UI: Developed planar image tracking on physical card decks.",
-                solution: "Implemented trilingual voice phonetics (AR/EN/FR).",
-                matrix: "Achieved 60FPS mobile shader optimization for Jungle, Alphabet & Space Games.",
+                title: "Ticoners Jungle: Interactive AR Animal Kingdom",
+                icon: "Images/ticoners/jungle_icon.png",
+                tech: "Unity, Vuforia / AR Foundation, C#, Trilingual Phonetics",
+                challenge: "Planar Target Detection & Tracking: Built multi-card planar image tracking for physical flashcard decks with dynamic occlusion handling.",
+                solution: "Trilingual Educational AR Interaction: Animated 3D animal models with realistic skeletal animations, authentic creature sounds, and interactive speech phonetics in 3 languages (English, Arabic, French).",
+                matrix: "Stable 60 FPS mobile shader optimization and touch responsiveness across target Android and iOS devices.",
                 imageUrls: [
+                    "Images/ticoners/jungle_screen_1.png",
+                    "Images/ticoners/jungle_screen_2.png",
+                    "Images/ticoners/jungle_screen_3.png",
+                    "Images/ticoners/jungle_screen_4.png",
                     "Images/27e959a9-42ad-4e9d-b785-9e855d134e5b_1.png",
-                    "Images/27e959a9-42ad-4e9d-b785-9e855d134e5b_2.png",
+                    "Images/27e959a9-42ad-4e9d-b785-9e855d134e5b_2.png"
+                ],
+                mediaLinks: [
+                    { type: "youtube", label: "Ticoners Jungle Game Demo", url: "https://www.youtube.com/watch?v=izRM2ONdyQg" },
+                    { type: "apkpure", label: "View Ticoners Jungle on APKPure", url: "https://apkpure.com/developer/Ticoners%20for%20information%20technology" }
+                ]
+            },
+            {
+                title: "Ticoners Alphabets: Trilingual AR Phonics & Letters",
+                icon: "Images/ticoners/alphabet_icon.png",
+                tech: "Unity, AR Foundation, C#, 3D Phonics",
+                challenge: "Interactive Early-Childhood Phonics: Designed an intuitive AR flashcard system educating children in Arabic, English, and French alphabets.",
+                solution: "Interactive 3D Letter Modeling: Each card triggers a corresponding 3D animated object, trilingual audio pronunciation, and interactive touch responses.",
+                matrix: "Memory-optimized asset loading and texture compression for rapid card swapping in educational environments.",
+                imageUrls: [
+                    "Images/ticoners/alphabet_screen_1.png",
+                    "Images/ticoners/alphabet_screen_2.png",
+                    "Images/ticoners/alphabet_screen_3.png",
+                    "Images/ticoners/alphabet_screen_4.png",
                     "Images/fe6a5b5b-70b1-4910-aa78-293f11e079ad_1.png",
-                    "Images/fe6a5b5b-70b1-4910-aa78-293f11e079ad_2.png",
+                    "Images/fe6a5b5b-70b1-4910-aa78-293f11e079ad_2.png"
+                ],
+                mediaLinks: [
+                    { type: "youtube", label: "Ticoners Alphabet Game Demo", url: "https://www.youtube.com/watch?v=cNu1BnJa02g" },
+                    { type: "apkpure", label: "View Ticoners Alphabets on APKPure", url: "https://apkpure.com/developer/Ticoners%20for%20information%20technology" }
+                ]
+            },
+            {
+                title: "Ticoners Space: Planetary Exploration AR",
+                icon: "Images/ticoners/space_icon.png",
+                tech: "Unity, AR Tracking, Shader FX, 3D Orbital Dynamics",
+                challenge: "Spatial Astronomy Simulation: Simulated solar system celestial bodies at mobile AR scale with accurate planetary textures and lighting estimation.",
+                solution: "Interactive Orbital Exploration: Children point mobile cameras at cards to explore 3D planets, observe orbital paths, and learn astronomy facts in real time.",
+                matrix: "Custom mobile unlit/PBR hybrid shaders to maintain high framerate during complex multi-body space rendering.",
+                imageUrls: [
+                    "Images/ticoners/space_screen_1.png",
+                    "Images/ticoners/space_screen_2.png",
+                    "Images/ticoners/space_screen_3.png",
+                    "Images/ticoners/space_screen_4.png",
                     "Images/fe6a5b5b-70b1-4910-aa78-293f11e079ad_3.png"
                 ],
                 mediaLinks: [
-                    { type: "youtube", label: "Ticoners Jungle Game", url: "https://www.youtube.com/watch?v=izRM2ONdyQg" },
-                    { type: "youtube", label: "Ticoners Alphabet Game", url: "https://www.youtube.com/watch?v=cNu1BnJa02g" },
-                    { type: "youtube", label: "Ticoners Space Game", url: "https://www.youtube.com/watch?v=hNVyeS81gl4" },
-                    { type: "apkpure", label: "Download Ticoners Published Games on APKPure", url: "https://apkpure.com/developer/Ticoners%20for%20information%20technology" }
+                    { type: "youtube", label: "Ticoners Space Game Demo", url: "https://www.youtube.com/watch?v=hNVyeS81gl4" },
+                    { type: "apkpure", label: "View Ticoners Space on APKPure", url: "https://apkpure.com/developer/Ticoners%20for%20information%20technology" }
                 ]
             },
             {
                 title: "Taj 51 Interactive Educational AR Curriculum Companion",
                 tech: "Unity, AR Tracking, Skeletal Rigging",
-                challenge: "Scope:",
-                solution: "Animated 3D human presenter (*Noura*), anatomy and chemistry models.",
+                challenge: "Curriculum Integration:",
+                solution: "Animated 3D human presenter (*Noura*), anatomy, and chemistry models integrated with digital textbook companions.",
                 matrix: "Integrated AR curriculum companion modules.",
                 mediaLinks: [
                     { type: "youtube", label: "Taj 51 Educational AR Demo", url: "https://www.youtube.com/watch?v=zemk-L0TeSE" }
@@ -273,8 +312,16 @@ function renderPortfolio() {
             // Text Details
             const details = document.createElement("div");
             details.className = "project-details";
+            
+            const headerHtml = proj.icon ? `
+                <div style="display:flex; align-items:center; gap:16px; margin-bottom:12px;">
+                    <img src="${proj.icon}" alt="${proj.title} Icon" style="width:58px; height:58px; border-radius:14px; box-shadow:0 4px 14px rgba(0,0,0,0.4); border:1px solid var(--border-color); flex-shrink:0; object-fit:cover;" />
+                    <h3 style="margin-bottom:0;">${proj.title}</h3>
+                </div>
+            ` : `<h3>${proj.title}</h3>`;
+
             details.innerHTML = `
-                <h3>${proj.title}</h3>
+                ${headerHtml}
                 <div class="tech-stack">${proj.tech}</div>
                 <div class="detail-section">
                     <h4>The Engineering Challenge</h4>
