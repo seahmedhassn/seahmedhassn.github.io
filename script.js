@@ -87,6 +87,9 @@ const portfolioData = [
                     "Images/WiningWorieros_5.png",
                     "Images/WiningWorieros_6.png",
                     "Images/WiningWorieros_7.png"
+                ],
+                mediaLinks: [
+                    { type: "apkpure", label: "Ticoners Developer Catalog & Published Games on APKPure", url: "https://apkpure.com/developer/Ticoners%20for%20information%20technology" }
                 ]
             }
         ]
@@ -111,7 +114,8 @@ const portfolioData = [
                 mediaLinks: [
                     { type: "youtube", label: "Ticoners Jungle Game", url: "https://www.youtube.com/watch?v=izRM2ONdyQg" },
                     { type: "youtube", label: "Ticoners Alphabet Game", url: "https://www.youtube.com/watch?v=cNu1BnJa02g" },
-                    { type: "youtube", label: "Ticoners Space Game", url: "https://www.youtube.com/watch?v=hNVyeS81gl4" }
+                    { type: "youtube", label: "Ticoners Space Game", url: "https://www.youtube.com/watch?v=hNVyeS81gl4" },
+                    { type: "apkpure", label: "Download Ticoners Published Games on APKPure", url: "https://apkpure.com/developer/Ticoners%20for%20information%20technology" }
                 ]
             },
             {
@@ -233,6 +237,17 @@ function renderPortfolio() {
                 <li>Configured Pixel Streaming server infrastructure, allowing clients to stream high-fidelity 3D applications to low-spec browsers.</li>
             </ul>
         </div>
+        
+        <div class="project-card" style="padding: 30px;">
+            <h3 style="color: var(--accent); margin-bottom: 5px; font-size: 1.4rem;">Ticnors <span style="color: var(--text-muted); font-size: 1.1rem; font-weight: 400;">— Unreal Engine &amp; Unity Developing Team Leader</span></h3>
+            <p style="color: var(--text-muted); margin-bottom: 15px; font-style: italic;">Feb 2020 – May 2021 | Cairo, Egypt (On-site)</p>
+            <ul style="color: var(--text-main); line-height: 1.7; margin-left: 20px;">
+                <li>Supervised a technical engineering team developing multiplayer VR games, interactive virtual expos, and commercial mobile AR applications.</li>
+                <li>Built server-client and dedicated multiplayer architectures using AWS cloud backend services for matchmaking and state synchronization.</li>
+                <li>Integrated custom C# scripts in Unity, C++/Blueprints in Unreal Engine, and optimized 3D assets in Blender.</li>
+                <li>Published commercial games and AR suites: <a href="https://apkpure.com/developer/Ticoners%20for%20information%20technology" target="_blank" style="color: var(--accent); font-weight: 600;">View Published Games on APKPure ↗</a></li>
+            </ul>
+        </div>
     `;
     main.appendChild(expSec);
     
@@ -316,10 +331,11 @@ function renderPortfolio() {
                             </div>
                         `;
                     } else {
-                        // Facebook, Drive, etc.
+                        // APKPure, Facebook, Drive, etc.
+                        const icon = link.type === 'apkpure' ? '🎮' : '🔗';
                         linksHtml += `
                             <a href="${link.url}" target="_blank" class="external-link-btn" style="display:block; padding:15px; background:var(--bg-color); color:var(--accent); text-decoration:none; border-radius:8px; border:1px solid var(--border-color); text-align:center; font-weight:600; transition:background 0.2s;">
-                                🔗 ${link.label} ↗
+                                ${icon} ${link.label} ↗
                             </a>
                         `;
                     }
