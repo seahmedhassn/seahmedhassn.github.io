@@ -278,7 +278,7 @@ function renderPortfolio() {
         <h2 class="section-title">Executive Profile</h2>
         <div class="project-card" style="padding: 30px;">
             <p style="font-size: 1.1rem; line-height: 1.8; color: var(--text-main);">
-                Senior Software Engineer and XR Developer with over <strong>6 years of professional experience</strong> delivering enterprise-grade simulations, real-time 3D applications, computer vision tools, and cross-platform multiplayer systems across <strong>Unreal Engine (C++, Blueprints), Unity (C#), and Python</strong>.<br><br>
+                Senior Software Engineer and XR Developer with over <strong>7 years of professional experience</strong> delivering enterprise-grade simulations, real-time 3D applications, computer vision tools, and cross-platform multiplayer systems across <strong>Unreal Engine (C++, Blueprints), Unity (C#), and Python</strong>.<br><br>
                 Specialized in high-fidelity VR flight/rescue simulators with realistic aerodynamic physics, hardware-in-the-loop synchronization, and low-latency rendering. Deep expertise in <strong>Mobile Game & Engine Optimization</strong> (profiling draw calls, ASTC texture streaming, Dynamic Resolution Scaling, thermal/battery budgeting, and low-latency netcode for mobile devices). Experienced across cloud-based <strong>Pixel Streaming</strong> architectures, virtual production workflows (<strong>Aximmetry, VIVE Mars</strong>), dedicated server replication (AWS), and custom C++ engine plugin development.<br><br>
                 Actively engineering multimodal AI tools, including fine-tuned Text-to-Speech (TTS) pipelines, gesture-based spatial interactions, and edge machine learning systems.
             </p>
